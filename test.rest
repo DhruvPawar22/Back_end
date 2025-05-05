@@ -1,0 +1,46 @@
+###To check if the server is running
+GET http://localhost:3000
+
+
+###register
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "username": "dhruv",
+    "password": "hello123"
+}
+
+###Login
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "username": "dhruv",
+    "password": "hello123"
+
+}
+### Display todos
+GET http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+
+### Add todos
+POST http://localhost:3000/todos
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+Content-Type: application/json
+
+{
+    "task": "second task"
+}
+###Update todos
+PUT http://localhost:3000/todos/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+Content-Type: application/json
+
+{
+    "completed": 1
+}
+
+###Delete todos
+DELETE http://localhost:3000/todos/4
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
