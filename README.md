@@ -1,0 +1,5 @@
+-Express for API routes and server handling
+-Prisma for ORM
+-Docker for containerisation
+-basic html css jss for back-front end communication via REST
+-REST Client for testing APIs instead of postman
