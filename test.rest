@@ -41,4 +41,4 @@ Content-Type: application/json
 
 ###Delete todos
 DELETE http://localhost:3000/todos/4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+Authorization: 
