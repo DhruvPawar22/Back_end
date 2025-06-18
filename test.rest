@@ -22,19 +22,17 @@ Content-Type: application/json
 }
 ### Display todos
 GET http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+Authorization: 
 
 ### Add todos
 POST http://localhost:3000/todos
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
-Content-Type: application/json
-
+Authorization:
 {
     "task": "second task"
 }
 ###Update todos
 PUT http://localhost:3000/todos/4
-Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MSwiaWF0IjoxNzQ1NDAxMTk1LCJleHAiOjE3NDU0ODc1OTV9.HOhZBDxA5YWRL8wU0zeqV6u6DmcgEcUS6NSeupN1Gdo
+Authorization: 
 Content-Type: application/json
 
 {
